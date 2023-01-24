@@ -199,7 +199,11 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.header-content .hamburger__menu {
+.header-content .h-menu {
+  display: none;
+  position: relative;
+}
+.header-content .h-menu .hamburger__menu {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -208,13 +212,27 @@ header {
   height: 13px;
   transition: 0.3s linear;
   cursor: pointer;
+  align-self: flex-end;
 }
-.header-content .hamburger__menu span {
+.header-content .h-menu .hamburger__menu span {
   display: block;
   width: 100%;
   min-height: 2px;
   background-color: #33323D;
   transition: 0.3s linear;
+}
+.header-content .h-menu__list {
+  display: none;
+}
+.header-content .h-menu__item {
+  text-align: center;
+}
+.header-content .h-menu__link {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .navbar__list {
@@ -243,6 +261,24 @@ header {
 @media only screen and (max-width: 767.98px) {
   .container {
     width: auto;
+  }
+  .navbar {
+    display: none;
+  }
+  .header-content .h-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .h-menu__list {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    flex-direction: column;
+    row-gap: 32px;
+    padding: 40px 64px !important;
+    background-color: #33323D;
+    transition: 0.3s linear;
+    white-space: nowrap;
   }
 }
 .hero-page {

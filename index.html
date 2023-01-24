@@ -33,10 +33,17 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="hamburger__menu">
-                    <span id="hamburger-top"></span>
-                    <span id="hamburger-middle"></span>
-                    <span id="hamburger-bottom"></span>
+                <div class="h-menu">
+                    <div class="hamburger__menu">
+                        <span id="hamburger-top"></span>
+                        <span id="hamburger-middle"></span>
+                        <span id="hamburger-bottom"></span>
+                    </div>
+                    <ul class="h-menu__list">
+                        <li class="h-menu__item"><a class="h-menu__link" href="./index.html">HOME</a></li>
+                        <li class="h-menu__item"><a class="h-menu__link" href="./pages/Portfolio/index.html">PORTFOLIO</a></li>
+                        <li class="h-menu__item"><a class="h-menu__link" href="./pages//Contact/index.html">CONTACT ME</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -146,6 +153,7 @@
         h__mid = document.getElementById("hamburger-middle"),
         h__bot = document.getElementById("hamburger-bottom"),
         [gam] = document.getElementsByClassName("hamburger__menu"),
+        [h__list] = document.getElementsByClassName("h-menu__list"),
         state = false;
 
     gam.addEventListener("click", () => {
@@ -154,13 +162,16 @@
             h__mid.style.transform = "scale(0)";
             h__bot.style.transform = "translateY(-11px) rotate(-135deg)";
             gam.style.transform = "translateY(8px)";
+            gam.style.marginBottom ="30px";
+            h__list.style.display = "flex";
             state = !state;
         }
         else{
             h__top.style.transform = "translateY(0px) rotate(0deg)";
             h__mid.style.transform = "scale(1)";
             h__bot.style.transform = "translateY(0px) rotate(0deg)";
-            gam.style.transform = "translateY(0px)";
+            gam.style.transform = "translateY(11px)";
+            h__list.style.display = "none";
             state = !state;
         }
     })
