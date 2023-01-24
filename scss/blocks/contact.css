@@ -1,0 +1,37 @@
+.contact {
+  margin-bottom: 150px;
+}
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact__title {
+  max-width: 350px;
+  font-family: "IbarraRealNova";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+}
+.contact__line {
+  width: 535px;
+  height: 1px;
+  background-color: #33323D;
+  opacity: 0.15;
+}
+.contact-btn {
+  padding: 17px 34px;
+  border: 1px solid #33323D;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #33323D;
+  transition: 0.3s linear;
+}
+.contact-btn:hover {
+  background-color: #33323D;
+  color: white;
+}/*# sourceMappingURL=contact.css.map */

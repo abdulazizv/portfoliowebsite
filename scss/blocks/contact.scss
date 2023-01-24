@@ -1,0 +1,39 @@
+@use '../root';
+
+.contact{
+    margin-bottom: 150px;
+    &-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        max-width: 350px;
+        font-family: 'IbarraRealNova';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        color: root.$grayish;
+    }
+    &__line{
+        width: 535px;
+        height: 1px;
+        background-color: root.$grayish;
+        opacity: .15;
+    }
+    &-btn{
+        padding: 17px 34px;
+        border: 1px solid root.$grayish;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: root.$grayish;
+        transition: .3s linear;
+        &:hover{
+            background-color: root.$grayish;
+            color: white;
+        }
+    }
+}
