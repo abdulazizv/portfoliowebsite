@@ -131,12 +131,6 @@ ol[class] {
   padding: 0;
 }
 
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 @font-face {
   font-family: "IbarraRealNova";
   src: url("../assets/fonts/IbarraRealNova/IbarraRealNova-Regular.woff") format("woff"), url("../assets/fonts/IbarraRealNova/IbarraRealNova-Regular.woff2") format("woff2");
@@ -166,4 +160,93 @@ ol[class] {
   src: url("../assets/fonts/PublicSans/PublicSans-BoldItalic.woff") format("woff"), url("../assets/fonts/PublicSans/PublicSans-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
+}
+body, html {
+  min-height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  background-color: white;
+  width: 100%;
+}
+
+.header-content {
+  padding-top: 64px;
+  padding-bottom: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 42px;
+       column-gap: 42px;
+}
+.navbar__link {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #33323D;
+  transition: 0.2s linear;
+}
+.navbar__link:hover {
+  color: #5FB4A2;
+}
+
+main {
+  padding-top: 151px;
+  flex-grow: 1;
+}
+
+.flex, .footer__nav-list, .footer__start {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+
+.footer {
+  background-color: #33323D;
+}
+.footer-content {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__nav-link {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.footer__end {
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  background-color: white;
+  width: 100%;
+}
+
+.header-content {
+  padding-top: 64px;
+  padding-bottom: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 42px;
+       column-gap: 42px;
+}
+.navbar__link {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #33323D;
+  transition: 0.2s linear;
+}
+.navbar__link:hover {
+  color: #5FB4A2;
+}/*# sourceMappingURL=header.css.map */

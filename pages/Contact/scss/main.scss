@@ -1,3 +1,7 @@
 @import 'normalize';
-@import '_general';
 @import '_fonts';
+@import 'general';
+@import 'root';
+@import './blocks/header';
+@import './blocks/mainblock';
+@import './blocks/footer';

@@ -217,9 +217,10 @@ header {
 }
 
 main {
-  padding-top: 150px;
+  padding-top: 151px;
   flex-grow: 1;
-} /*# sourceMappingURL=main.css.map */
+}
+
 .flex, .footer__nav-list, .footer__start {
   display: flex;
   align-items: center;
