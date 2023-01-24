@@ -1,0 +1,58 @@
+@use '../root';
+
+.about-me{
+    margin-bottom: 150px;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__imgbox{
+        position: relative;
+        width: 540px;
+        height: 600px;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+    }
+    &__text{
+        width: calc(1110px - (540px + 125px));
+        padding-right: 93px;
+    }
+    &__text-info-content{
+        padding-top: 50px;
+        padding-bottom: 46px;
+        border-top: 1px solid #979797;
+        border-bottom: 1px solid #979797;
+    }
+    &__title{
+        font-family: 'IbarraRealNova';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        color: root.$grayish;
+        margin-bottom: 28px;
+    }
+    &__desc{
+        font-size: 16px;
+        line-height: 30px;
+        color: root.$grayish;
+        opacity: 0.8;
+        margin-bottom: 24px;
+    }
+    &__btn{
+        padding: 17px 34px;
+        border: 1px solid root.$grayish;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: root.$grayish;
+        transition: .3s linear;
+        &:hover{
+            background-color: root.$grayish;
+            color: white;
+        }
+    }
+}
