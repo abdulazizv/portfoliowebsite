@@ -1,1 +1,36 @@
-@forward '../root';
+@use '../root';
+
+.flex{
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+.footer{
+    background-color: root.$grayish;
+    &-content{
+        padding: 24px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__start{
+        @extend .flex;
+    }
+    &__nav-list{
+        @extend .flex;
+    }
+    &__nav-link{
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__end{
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+    }
+    
+}
