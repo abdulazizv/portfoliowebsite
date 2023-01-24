@@ -257,6 +257,15 @@ header {
   display: flex;
   align-items: center;
 }
+.hero-page__btn:hover .hero-page__icon-box {
+  background-color: #5FB4A2;
+}
+.hero-page__btn:hover .hero-page__btn-text {
+  background-color: #8CC9C5;
+}
+.hero-page__btn:hover .hero-page__icon-box svg path {
+  stroke: white;
+}
 .hero-page__icon-box {
   padding: 18px 16px;
   background-color: #1D3444;
@@ -266,6 +275,7 @@ header {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  transition: 0.3s linear;
 }
 .hero-page__btn-text {
   padding: 18px 37px;
@@ -276,6 +286,7 @@ header {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #203A4C;
+  transition: 0.3s linear;
 }
 
 main {

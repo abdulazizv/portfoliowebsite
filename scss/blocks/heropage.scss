@@ -39,6 +39,15 @@
     &__btn{
         display: flex;
         align-items: center;
+        &:hover .hero-page__icon-box{
+            background-color: #5FB4A2;
+        }
+        &:hover .hero-page__btn-text{
+            background-color: #8CC9C5;
+        }
+        &:hover .hero-page__icon-box svg path{
+            stroke: white;
+        }
     }
     &__icon-box{
         padding: 18px 16px;
@@ -47,6 +56,7 @@
         align-items: center;
         justify-content: center;
         width: fit-content;
+        transition: .3s linear;
     }
     &__btn-text{
         padding: 18px 37px;
@@ -57,6 +67,7 @@
         text-transform: uppercase;
         color: #FFFFFF;
         background-color: #203A4C;
+        transition: .3s linear;
     }
 
 }
