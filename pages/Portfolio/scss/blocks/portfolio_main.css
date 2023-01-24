@@ -7,7 +7,6 @@
 
 .img_box {
   position: relative;
-  flex: 1;
 }
 .img_box .line {
   position: absolute;
@@ -25,8 +24,6 @@
 
 .manage_content {
   width: 100%;
-  height: 100%;
-  flex: 1;
 }
 .manage_content .manage_title {
   font-family: "IbarraRealNova";
@@ -107,4 +104,66 @@
 .portfolio_contact .p_contact_link:hover {
   color: #fff;
   background-color: #33323D;
+}
+
+.mobile__section_responsive {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .main_section {
+    padding-top: 40px;
+  }
+  .portfolio__list--item {
+    gap: 100px;
+    margin-bottom: 132px;
+  }
+  .portfolio__list--item:nth-child(even) .line {
+    left: -380px;
+  }
+  .img_box .content_img {
+    width: 339px;
+    height: 314px;
+  }
+  .img_box .line {
+    width: 281px;
+    top: -47px;
+    right: -380px;
+  }
+  .manage_content {
+    width: 281px;
+  }
+  .manage_content .manage_desc {
+    width: 281px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main_section {
+    display: none;
+  }
+  .mobile__section_responsive {
+    display: block;
+  }
+}
+@media only screen and (max-width: 705px) {
+  .portfolio__list--item {
+    flex-direction: column;
+  }
+  .manage_content {
+    width: 311px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-top: 1px solid #e6e6e7;
+    border-bottom: 1px solid #e6e6e7;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .img_box {
+    width: 311px;
+  }
+  .img_box .content_img {
+    width: 311px;
+    height: 288px;
+  }
 }/*# sourceMappingURL=portfolio_main.css.map */
