@@ -1,0 +1,5 @@
+@use '../root';
+
+h1{
+    color: root.$cyan-green;
+}
