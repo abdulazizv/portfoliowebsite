@@ -197,6 +197,41 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.header-content .h-menu {
+  display: none;
+  position: relative;
+}
+.header-content .h-menu .hamburger__menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 13px;
+  transition: 0.3s linear;
+  cursor: pointer;
+  align-self: flex-end;
+}
+.header-content .h-menu .hamburger__menu span {
+  display: block;
+  width: 100%;
+  min-height: 2px;
+  background-color: #33323D;
+  transition: 0.3s linear;
+}
+.header-content .h-menu__list {
+  display: none;
+}
+.header-content .h-menu__item {
+  text-align: center;
+}
+.header-content .h-menu__link {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
 
 .navbar__list {
   display: flex;
@@ -216,6 +251,34 @@ header {
   color: #5FB4A2;
 }
 
+@media only screen and (max-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .container {
+    width: auto;
+  }
+  .navbar {
+    display: none;
+  }
+  .header-content .h-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .h-menu__list {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    flex-direction: column;
+    row-gap: 32px;
+    padding: 40px 64px !important;
+    background-color: #33323D;
+    transition: 0.3s linear;
+    white-space: nowrap;
+  }
+}
 main {
   padding-top: 151px;
   flex-grow: 1;
@@ -391,6 +454,9 @@ main {
   .mobile__section_responsive {
     display: block;
   }
+  .p_line {
+    width: 113px !important;
+  }
 }
 @media only screen and (max-width: 705px) {
   .portfolio__list--item {
@@ -442,4 +508,18 @@ main {
   -moz-column-gap: 15px;
        column-gap: 15px;
   align-items: center;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .container {
+    width: auto;
+  }
+  .footer-content, .footer__start {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .footer__nav-list {
+    flex-direction: column;
+    row-gap: 32px;
+  }
 }/*# sourceMappingURL=main.css.map */
