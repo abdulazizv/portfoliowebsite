@@ -26,4 +26,18 @@
   -moz-column-gap: 15px;
        column-gap: 15px;
   align-items: center;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .container {
+    width: auto;
+  }
+  .footer-content, .footer__start {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .footer__nav-list {
+    flex-direction: column;
+    row-gap: 32px;
+  }
 }/*# sourceMappingURL=footer.css.map */
